@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="./css/main.css" />
+
+	<meta charset="UTF-8">
+
+	<title>Caesar Cipher</title>
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<div id="header">
+
+		<h1>Caesar Cipher</h1>
+		<p class="header-text">Enter a message to encrypt using the Caesar Cipher, and a value to shift the letters by.</p>
+
+	</div>
+
+	<div id="content">
+
+		<div id="original-string">
+
+			<div class="section">
+
+				<label for="original-string-text">Message to be encrypted:</label>
+				<input type="text" name="original-string-text" id="original-string-text" placeholder="Enter text here" />
+
+			</div>
+
+			<div class="section">
+
+				<label for="shift-value"><div class="tip">(Any whole number, positive or negative.)</div>Position to shift by:</label>
+				<input type="text" name="shift-value" id="shift-value" placeholder="Value to shift" />
+
+			</div>
+
+		</div>
+
+		<div id="button-div">
+
+			<a href="#cipher-string-text" id="cipher-button">Encrypt!</a>
+
+		</div>
+
+		<div id="cipher-string">
+
+			<div class="section">
+
+				<h2>Your encrypted message is:</h2>
+
+				<p id="cipher-string-text">Blah Blah Blah</p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<script src="./js/main.js"></script>
+
+</body>
+
+
+</html>

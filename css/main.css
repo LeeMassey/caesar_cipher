@@ -1,0 +1,143 @@
+body {
+	font-family: 'Share Tech Mono', monospace;
+	background: #D0DEEA;
+	color: #5a5a5a;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+}
+
+#content {
+	display: flex;
+	width: 80%;
+	justify-content: center;
+}
+
+#original-string {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 35%;
+}
+
+#original-string label {
+	padding: 8px;
+}
+
+#original-string input {
+	border: 2px dashed #9f9f9f;
+	padding: 7px;
+}
+
+#button-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+}
+
+#button-div a {
+	margin: 15px;
+	padding: 1em 2em;
+	text-decoration: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: bold;
+	color: white;
+	background: #00305D;
+	border: 1px solid #9f9f9f;
+}
+
+div.section, #button-div a {
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+
+
+#cipher-string {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 35%;
+}
+
+#cipher-string p {
+	border: 2px dashed #9f9f9f;
+	padding: 15px;
+	font-style: italic;
+	background: white;
+}
+
+.header-text {
+	max-width: 400px;
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	margin: 12px;
+	background-color: #B4D5F1;
+}
+
+.tip {
+	font-size: .75em;
+	color: #777777;
+	margin-bottom: 5px;
+}
+
+.section, #original-string input, #button-div a, #cipher-string p {
+	border-radius: 7px;
+}
+
+h1 {
+	font-size: 1.75rem;
+	padding:15px 0;
+	border: 10px double #00305D;
+	border-left: none;
+	border-right: none;
+	box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.65);
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+h2 {
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+h1, h2, label, .header-text {
+	color: #00305D;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	color: inherit;
+}
+
+@media screen and (max-width: 800px) {
+	#content {
+		flex-direction: column;
+	}
+
+	#original-string, #button-div, #cipher-string {
+		width: 100%;
+	}
+}
